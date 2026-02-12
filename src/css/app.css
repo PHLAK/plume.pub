@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+/* TODO: Font Family - Montserrat (san serif) */
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("/fonts/Montserrat.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Rokkitt";
+    src: url("/fonts/Rokkitt.woff2") format("woff2");
+}
+
+@theme {
+    --font-sans: Montserrat;
+    --font-serif: Rokkitt;
+}
+
+.button {
+    @apply block rounded-lg border border-stone-600 text-stone-800 px-4 py-2 hover:bg-stone-200 dark:border-stone-400 dark:text-stone-400 dark:hover:bg-stone-700;
+}
