@@ -1,7 +1,5 @@
 @import "tailwindcss";
 
-/* TODO: Font Family - Montserrat (san serif) */
-
 @font-face {
     font-family: "Montserrat";
     src: url("/fonts/Montserrat.woff2") format("woff2");
