@@ -1,75 +1,204 @@
 <!DOCTYPE html>
 
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<link rel="icon" href="/images/favicon.svg">
-<link rel="stylesheet" href="/src/css/app.css">
+    <meta name="description" content="Plume is your self-hosted, Markdown-powered publishing platform. Write in plain text, own your files, and publish beautifully.">
 
-%VITE_SCRIPTS%
+    <link rel="icon" href="/images/favicon.svg">
+    <link rel="stylesheet" href="/src/css/app.css">
 
-<title>Plume</title>
+    %VITE_SCRIPTS%
 
-<div class="flex justify-center bg-stone-800 p-4 w-full">
-    <div class="container flex flex-col justify-center gap-1 max-w-6xl text-white text-sm text-center leading-5 lg:flex-row">
-        <div class="font-semibold">
-            Plume is under active developemet.
-        </div>
+    <title>Plume &mdash; Your thoughts, in Markdown, on your server.</title>
+</head>
 
-        <div>
-            We'd love to hear your comments and feedback on
-            <a href="https://github.com/PHLAK/Plume/discussions" class="inline-block underline">GitHub</a>
-            or <a href="https://bsky.app/profile/plume.pub" class="inline-block underline">BlueSky</a>.
+<body class="font-sans antialiased">
+    <div class="flex justify-center bg-stone-800 p-3 w-full">
+        <div class="container flex flex-col justify-center gap-1 max-w-6xl text-white text-sm text-center leading-5 lg:flex-row">
+            <div class="font-semibold">
+                Plume is under active development.
+            </div>
+
+            <div>
+                We'd love to hear your comments and feedback on
+                <a href="https://github.com/PHLAK/Plume/discussions" class="inline-block underline hover:text-stone-300">GitHub</a>
+                or <a href="https://bsky.app/profile/plume.pub" class="inline-block underline hover:text-stone-300">Bluesky</a>.
+            </div>
         </div>
     </div>
-</div>
 
-<div id="app" class="flex items-center justify-center min-h-screen w-full text-stone-800 px-4 py-12 sm:px-8 dark:text-stone-200">
-    <div class="container max-w-6xl flex flex-col justify-center items-center gap-12">
-        <div class="flex flex-col justify-between items-center gap-4 font-serif text-8xl font-light sm:flex-row">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240" class="size-24 mx-auto fill-current"><g transform="matrix(1,0,0,1,-80,180)"><g><path d="M80,-140 C80,-140 80,20 80,20 C80,42.07139111000001 97.92860888999999,60 120,60 C120,60 280,60 280,60 C302.07139111000004,60 320,42.07139111000001 320,20 C320,20 320,-140 320,-140 C320,-162.07139111 302.07139111000004,-180 280,-180 C280,-180 120,-180 120,-180 C97.92860888999999,-180 80,-162.07139111 80,-140 ZM268.31518243,-139.96648282 C271.46676852,-140.22115559 274.55468247,-139.01145903 276.78307118,-136.78307017999998 C279.01145988999997,-134.55468133 280.22115273,-131.46676961 279.96648362,-128.31519304 C278.69311864,-112.62096774 274.4273382,-88.14052647 265.22726848,-64.74244355 C264.65425813,-63.30990786 263.47639164,-62.22754951 261.98020333,-61.78186396 C261.98020333,-61.78186396 236.22638892,-54.04617513 236.22638892,-54.04617513 C234.98486001,-53.664161730000004 234.15717084,-52.5499673 234.15717084,-51.24477589 C234.15717084,-49.6212335 235.46237188,-48.316032379999996 237.08591417,-48.316032379999996 C237.08591417,-48.316032379999996 249.37387841,-48.316032379999996 249.37387841,-48.316032379999996 C253.19397334,-48.316032379999996 255.64520481,-44.24126808 253.67148521000001,-40.96234723 C252.39812023000002,-38.829466589999996 251.02925677000002,-36.76024837 249.62855724,-34.72285651 C248.99187475,-33.79966879 248.03685102,-33.13115019 246.95449273,-32.78098257 C246.95449273,-32.78098257 215.8525493,-23.48541377 215.8525493,-23.48541377 C214.61102039,-23.103400369999996 213.78333122,-21.989205939999998 213.78333122,-20.68401453 C213.78333122,-19.06047214 215.08853226,-17.755271020000002 216.71207455,-17.755271020000002 C216.71207455,-17.755271020000002 221.80553445,-17.755271020000002 221.80553445,-17.755271020000002 C226.45330884,-17.755271020000002 228.49070058,-12.216134959999998 224.60693351,-9.66940485 C202.95972892,4.655961750000003 180.77134033,4.114777720000006 166.54149255,0.29468255000000454 C162.49855486,-0.7876855199999966 158.90130269,-2.85690374 155.59055084,-5.4036338499999985 C155.59055084,-5.4036338499999985 132.28797275,17.898950569999997 132.28797275,17.898950569999997 C129.48656883,20.700349810000006 124.90245686,20.700349810000006 122.10105294,17.898950569999997 C119.29964902,15.097551330000002 119.29964902,10.513429360000003 122.10105294,7.712030119999994 C122.10105294,7.712030119999994 147.56835246,-17.755271020000002 147.56835246,-17.755271020000002 C147.56835246,-17.755271020000002 147.72752308,-17.596100379999996 147.72752308,-17.596100379999996 C147.95036098,-18.009940139999998 148.23687102,-18.391953539999996 148.58704347,-18.742130879999998 C148.58704347,-18.742130879999998 198.5029515,-68.68987328 198.5029515,-68.68987328 C201.30435057,-71.49127252 201.30435057,-76.0753945 198.5029515,-78.87679374 C195.70155244,-81.67819783 191.11743076,-81.67819783 188.3160317,-78.87679374 C188.3160317,-78.87679374 145.56280164999998,-36.155392199999994 145.56280164999998,-36.155392199999994 C142.72956652,-33.32215689 137.9226118,-34.75469258 137.60427055,-38.76579445 C136.23540466,-55.70155359 140.56484509,-77.95360601 160.71584681000002,-98.10460415 C189.71673123,-127.10549526 241.63819007,-137.80176125 268.28335608,-139.96648282 C268.28335608,-139.96648282 268.31518243,-139.96648282 268.31518243,-139.96648282 Z"/></g></g></svg>
-
-            Plume
-        </div>
-
-        <p class="text-center text-xl">
-            Your <span class="font-medium">self-hosted</span>, <span class="font-medium">Markdown</span> powered, <span class="font-medium">flat-file</span> publishing platform.
-        </p>
-
-        <div class="flex justify-center flex-wrap items-center gap-4 sm:gap-6">
-            <div class="flex gap-4 sm:gap-6">
-                <a href="https://docs.plume.pub" class="button">
-                    Documentation
-                </a>
-
-                <a href="https://demo.plume.pub" class="button">
-                    Demo
-                </a>
-            </div>
-
-            <div class="flex gap-4 sm:gap-6">
-                <a href="https://github.com/PHLAK/Plume" class="button">
-                    GitHub
-                </a>
-
-                <a href="https://bsky.app/profile/plume.pub" class="button">
-                    Bluesky
-                </a>
-            </div>
-        </div>
-
-        <div class="bg-white border border-stone-200 outline-6 outline-white rounded-lg overflow-hidden dark:border-stone-600 dark:outline-stone-700">
-            <img src="/images/screenshot.png" alt="Plume screenshot" class="max-w-full rounded border-s-stone-600">
-        </div>
-
-        <hr class="border-t-4 border-stone-200 w-64 mx-auto dark:border-stone-600">
-
-        <div class="text-sm text-stone-600">
-            &copy; 2026
-
-            <a href="https://www.chriskankiewicz.com" class="hover:underline hover:text-gray-600">
-                Chris Kankiewicz
+    <nav class="sticky top-0 z-50 w-full border-b border-stone-200 bg-stone-50/80 backdrop-blur dark:border-stone-800 dark:bg-stone-900/80">
+        <div class="container mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:px-8">
+            <a href="/" class="flex items-center gap-3 text-stone-800 dark:text-stone-100">
+                <img src="/images/favicon.svg" alt="" class="h-8 w-8" aria-hidden="true">
+                <span class="font-serif text-2xl font-light tracking-tight">Plume</span>
             </a>
+
+            <div class="flex items-center gap-2 sm:gap-6">
+                <a href="https://docs.plume.pub" class="nav-link hidden sm:inline">Docs</a>
+                <a href="https://demo.plume.pub" class="nav-link hidden sm:inline">Demo</a>
+                <a href="https://github.com/PHLAK/Plume" class="nav-link hidden sm:inline">GitHub</a>
+                <a href="https://docs.plume.pub" class="btn-primary text-sm">Get Started</a>
+            </div>
         </div>
-    </div>
-</div>
+    </nav>
+
+    <main>
+        <section class="relative overflow-hidden px-4 pt-16 pb-20 sm:px-8 lg:pt-24 lg:pb-28">
+            <div class="absolute inset-0 -z-10 bg-gradient-to-b from-stone-200/50 to-transparent dark:from-stone-800/30"></div>
+
+            <div class="container mx-auto flex max-w-6xl flex-col items-center text-center">
+                <h1 class="text-5xl font-light tracking-tight text-stone-800 sm:text-6xl lg:text-7xl dark:text-stone-100">
+                    Your thoughts, in <span class="font-serif italic">Markdown</span>, on your server.
+                </h1>
+
+                <p class="mt-6 max-w-2xl text-xl leading-relaxed text-stone-600 sm:text-2xl dark:text-stone-400">
+                    A self-hosted, flat-file publishing platform for writers who want to own their words.
+                </p>
+
+                <div class="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center">
+                    <a href="https://docs.plume.pub" class="btn-primary text-lg px-8 py-3">
+                        Get Started
+                    </a>
+
+                    <a href="https://demo.plume.pub" class="btn-secondary text-lg px-8 py-3">
+                        View Demo
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="px-4 pb-20 sm:px-8 lg:pb-28">
+            <div class="container mx-auto max-w-5xl">
+                <div class="relative overflow-hidden rounded-2xl border border-stone-200 bg-stone-100 shadow-2xl dark:border-stone-700 dark:bg-stone-800">
+                    <div class="flex items-center justify-between border-b border-stone-200 bg-stone-100 px-4 py-3 dark:border-stone-700 dark:bg-stone-800">
+                        <img src="/images/favicon.svg" alt="" class="h-5 w-5" aria-hidden="true">
+
+                        <span class="text-xs font-medium text-stone-500 dark:text-stone-400">Plume Demo</span>
+
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-4 w-4 text-stone-400 dark:text-stone-500" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M5.47 5.47a.75.75 0 0 1 1.06 0L12 10.94l5.47-5.47a.75.75 0 1 1 1.06 1.06L13.06 12l5.47 5.47a.75.75 0 1 1-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 0 1-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <img src="/images/screenshot.png" alt="A preview of a Plume blog showing a post titled The Witness with a clean, readable layout." class="w-full">
+                </div>
+                <p class="mt-4 text-center text-sm text-stone-500 dark:text-stone-400">
+                    A live preview of the default Plume theme.
+                </p>
+            </div>
+        </section>
+
+        <section class="bg-stone-100 px-4 py-20 dark:bg-stone-900 sm:px-8 lg:py-28">
+            <div class="container mx-auto max-w-6xl">
+                <h2 class="section-heading">Why Plume?</h2>
+                <p class="section-subheading">Everything you need to publish, without the complexity you don't.</p>
+
+                <div class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+                    <div class="feature-card">
+                        <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-stone-200 text-stone-800 dark:bg-stone-800 dark:text-stone-200">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" />
+                            </svg>
+                        </div>
+                        <h3 class="mt-5 text-lg font-semibold text-stone-800 dark:text-stone-100">Write in Markdown</h3>
+                        <p class="mt-2 text-stone-600 dark:text-stone-400">No database, no rich-text editor. Just your favorite text editor and plain Markdown.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-stone-200 text-stone-800 dark:bg-stone-800 dark:text-stone-200">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.75V12A2.25 2.25 0 0 1 4.5 9.75h15A2.25 2.25 0 0 1 21.75 12v.75m-8.69-6.44-2.12-2.12a1.5 1.5 0 0 0-1.061-.44H4.5A2.25 2.25 0 0 0 2.25 6v12a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9a2.25 2.25 0 0 0-2.25-2.25h-5.379a1.5 1.5 0 0 1-1.06-.44Z" />
+                            </svg>
+                        </div>
+                        <h3 class="mt-5 text-lg font-semibold text-stone-800 dark:text-stone-100">Own Your Files</h3>
+                        <p class="mt-2 text-stone-600 dark:text-stone-400">All your posts live as flat files. Back them up, version them, and move them anywhere.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-stone-200 text-stone-800 dark:bg-stone-800 dark:text-stone-200">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                            </svg>
+                        </div>
+                        <h3 class="mt-5 text-lg font-semibold text-stone-800 dark:text-stone-100">Find Anything</h3>
+                        <p class="mt-2 text-stone-600 dark:text-stone-400">Built-in full-text search helps readers (and you) discover every post instantly.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-stone-200 text-stone-800 dark:bg-stone-800 dark:text-stone-200">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
+                            </svg>
+                        </div>
+                        <h3 class="mt-5 text-lg font-semibold text-stone-800 dark:text-stone-100">Look Great</h3>
+                        <p class="mt-2 text-stone-600 dark:text-stone-400">Automatic light and dark modes, theme support, and RSS feeds out of the box.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-stone-50 px-4 py-20 dark:bg-stone-950 sm:px-8 lg:py-28">
+            <div class="container mx-auto max-w-4xl">
+                <h2 class="section-heading">How it works</h2>
+                <p class="section-subheading">From idea to published in three simple steps.</p>
+
+                <div class="mt-14 grid gap-8 sm:grid-cols-3">
+                    <div class="relative text-center">
+                        <div class="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-stone-800 text-lg font-semibold text-white dark:bg-stone-600">1</div>
+                        <h3 class="mt-5 text-lg font-semibold text-stone-800 dark:text-stone-100">Write your post</h3>
+                        <p class="mt-2 text-stone-600 dark:text-stone-400">Create a Markdown file with your thoughts, code, images, and front matter.</p>
+                    </div>
+
+                    <div class="relative text-center">
+                        <div class="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-stone-800 text-lg font-semibold text-white dark:bg-stone-600">2</div>
+                        <h3 class="mt-5 text-lg font-semibold text-stone-800 dark:text-stone-100">Drop it in</h3>
+                        <p class="mt-2 text-stone-600 dark:text-stone-400">Add the file to your Plume content folder. No uploads, no database migrations.</p>
+                    </div>
+
+                    <div class="relative text-center">
+                        <div class="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-stone-800 text-lg font-semibold text-white dark:bg-stone-600">3</div>
+                        <h3 class="mt-5 text-lg font-semibold text-stone-800 dark:text-stone-100">Run with Docker</h3>
+                        <p class="mt-2 text-stone-600 dark:text-stone-400">Start Plume with Docker and your words are live. Easy to manage and easy to move.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-stone-800 px-4 py-16 text-center sm:px-8 lg:py-20 dark:bg-stone-700">
+            <div class="container mx-auto max-w-3xl">
+                <h2 class="text-3xl font-light tracking-tight text-white sm:text-4xl">Questions or ideas?</h2>
+                <p class="mt-4 text-lg text-stone-300">
+                    We'd love to hear from you. Join the conversation, share feedback, or follow along for updates.
+                </p>
+
+                <div class="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
+                    <a href="https://github.com/PHLAK/Plume/discussions" class="btn-cta-light">
+                        GitHub Discussions
+                    </a>
+                    <a href="https://bsky.app/profile/plume.pub" class="btn-cta-light">
+                        Follow on Bluesky
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="border-t border-stone-200 bg-stone-50 px-4 py-10 text-sm text-stone-600 dark:border-stone-800 dark:bg-stone-900 dark:text-stone-400">
+        <div class="container mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 sm:flex-row sm:px-8">
+            <div>
+                &copy; 2026
+                <a href="https://www.chriskankiewicz.com" class="font-medium text-stone-800 hover:text-stone-800 dark:text-stone-200 dark:hover:text-stone-200">Chris Kankiewicz</a>
+            </div>
+
+            <div class="flex items-center gap-6">
+                <a href="https://github.com/PHLAK/Plume" class="hover:text-stone-800 dark:hover:text-stone-200">GitHub</a>
+                <a href="https://docs.plume.pub" class="hover:text-stone-800 dark:hover:text-stone-200">Docs</a>
+                <a href="https://github.com/PHLAK/Plume/blob/master/LICENSE" class="hover:text-stone-800 dark:hover:text-stone-200">MIT License</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
