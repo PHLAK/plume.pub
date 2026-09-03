@@ -19,24 +19,24 @@ html {
     @apply scroll-smooth bg-stone-50 text-stone-800 dark:bg-stone-900 dark:text-stone-100;
 }
 
+code {
+    @apply rounded-sm bg-stone-200/60 px-1 py-0.5 text-[0.875em] dark:bg-stone-800;
+}
+
 .nav-link {
     @apply text-stone-600 hover:text-stone-800 transition-colors dark:text-stone-400 dark:hover:text-stone-200 hover:underline;
 }
 
 .button-primary {
-    @apply inline-flex items-center justify-center bg-stone-800 px-5 py-2.5 font-medium text-white shadow-sm hover:shadow-md dark:bg-stone-600;
+    @apply inline-flex items-center justify-center bg-stone-800 rounded-md px-5 py-2.5 font-medium text-white shadow-sm transition hover:shadow-md dark:bg-stone-600;
 }
 
 .button-secondary {
-    @apply inline-flex items-center justify-center border border-stone-800 bg-white px-5 py-2.5 font-medium text-stone-800 hover:border-stone-600 hover:shadow-md dark:border-stone-600 dark:bg-stone-800 dark:text-stone-200;
-}
-
-.button-ghost {
-    @apply inline-flex items-center justify-center px-4 py-2 font-medium text-stone-700 transition hover:bg-stone-100 dark:text-stone-200 dark:hover:bg-stone-800;
+    @apply inline-flex items-center justify-center border border-stone-800 bg-white rounded-md px-5 py-2.5 font-medium text-stone-800 transition hover:border-stone-600 hover:shadow-md dark:border-stone-600 dark:bg-stone-800 dark:text-stone-200;
 }
 
 .button-cta-light {
-    @apply inline-flex items-center justify-center border border-white/20 bg-white/10 px-5 py-2.5 font-medium text-white transition hover:bg-white/20;
+    @apply inline-flex items-center justify-center border border-white/20 bg-white/10 rounded-md px-5 py-2.5 font-medium text-white transition hover:bg-white/20;
 }
 
 .feature-card {

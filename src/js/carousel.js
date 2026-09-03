@@ -23,7 +23,7 @@ function initCarousel(carousel) {
         const index = currentIndex();
 
         indicators.forEach((indicator, i) => {
-            indicator.classList.toggle('opacity-50', i !== index);
+            indicator.firstElementChild.classList.toggle('opacity-50', i !== index);
 
             if (i === index) {
                 indicator.setAttribute('aria-current', 'true');

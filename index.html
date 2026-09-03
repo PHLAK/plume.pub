@@ -22,7 +22,7 @@
                 Plume is under active development
             </div>
 
-            <div class="font-semibold">&bull;</div>
+            <div class="hidden font-semibold lg:block">&bull;</div>
 
             <div>
                 Share your feedback on
@@ -43,15 +43,15 @@
                 <a href="https://docs.plume.pub" class="nav-link hidden sm:inline">Docs</a>
                 <a href="https://demo.plume.pub" class="nav-link hidden sm:inline">Demo</a>
 
-                <div class="hidden sm:flex gap-3">
+                <div class="hidden sm:flex gap-2">
                     <a href="https://github.com/PHLAK/Plume" title="GitHub">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" class="size-8 fill-stone-600 hover:fill-stone-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" class="size-8 fill-stone-600 transition hover:scale-115 hover:fill-stone-500">
                             <!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M280.5 426.5C214.5 418.5 168 371 168 309.5C168 284.5 177 257.5 192 239.5C185.5 223 186.5 188 194 173.5C214 171 241 181.5 257 196C276 190 296 187 320.5 187C345 187 365 190 383 195.5C398.5 181.5 426 171 446 173.5C453 187 454 222 447.5 239C463.5 258 472 283.5 472 309.5C472 371 425.5 417.5 358.5 426C375.5 437 387 461 387 488.5L387 540.5C387 555.5 399.5 564 414.5 558C505 523.5 576 433 576 321C576 179.5 461 64 319.5 64C178 64 64 179.5 64 321C64 432 134.5 524 229.5 558.5C243 563.5 256 554.5 256 541L256 501C249 504 240 506 232 506C199 506 179.5 488 165.5 454.5C160 441 154 433 142.5 431.5C136.5 431 134.5 428.5 134.5 425.5C134.5 419.5 144.5 415 154.5 415C169 415 181.5 424 194.5 442.5C204.5 457 215 463.5 227.5 463.5C240 463.5 248 459 259.5 447.5C268 439 274.5 431.5 280.5 426.5z"/>
                         </svg>
                     </a>
 
                     <a href="https://bsky.app/profile/plume.pub" title="Bluesky">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" class="size-8 fill-stone-600 hover:fill-stone-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" class="size-8 fill-stone-600 transition hover:scale-115 hover:fill-stone-500">
                             <!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M439.8 358.7C436.5 358.3 433.1 357.9 429.8 357.4C433.2 357.8 436.5 358.3 439.8 358.7zM320 291.1C293.9 240.4 222.9 145.9 156.9 99.3C93.6 54.6 69.5 62.3 53.6 69.5C35.3 77.8 32 105.9 32 122.4C32 138.9 41.1 258 47 277.9C66.5 343.6 136.1 365.8 200.2 358.6C203.5 358.1 206.8 357.7 210.2 357.2C206.9 357.7 203.6 358.2 200.2 358.6C106.3 372.6 22.9 406.8 132.3 528.5C252.6 653.1 297.1 501.8 320 425.1C342.9 501.8 369.2 647.6 505.6 528.5C608 425.1 533.7 372.5 439.8 358.6C436.5 358.2 433.1 357.8 429.8 357.3C433.2 357.7 436.5 358.2 439.8 358.6C503.9 365.7 573.4 343.5 593 277.9C598.9 258 608 139 608 122.4C608 105.8 604.7 77.7 586.4 69.5C570.6 62.4 546.4 54.6 483.2 99.3C417.1 145.9 346.1 240.4 320 291.1z"/>
                         </svg>
                     </a>
@@ -64,7 +64,6 @@
 
     <main>
         <section class="relative overflow-hidden bg-linear-to-b from-stone-200/50 to-transparent px-4 pt-16 pb-20 sm:px-8 lg:pt-24 lg:pb-28 dark:from-stone-800/30">
-
             <div class="container mx-auto flex flex-col gap-6 items-center text-center max-w-6xl sm:gap-10">
                 <h1 class="text-4xl font-light tracking-tight text-stone-800 sm:text-6xl lg:text-7xl dark:text-stone-100">
                     Your words, in <span class="font-serif italic">Markdown</span>,
@@ -72,7 +71,7 @@
                 </h1>
 
                 <p class="leading-relaxed text-stone-500 sm:text-xl dark:text-stone-400">
-                    A self-hosted, flat-file publishing platform for the independant web.
+                    A self-hosted, flat-file publishing platform for the independent web.
                 </p>
 
                 <div class="flex gap-4 sm:items-center">
@@ -89,12 +88,13 @@
 
         <section class="px-4 pb-20 sm:px-8 lg:pb-28">
             <div class="container mx-auto max-w-5xl">
-                <div class="relative overflow-hidden border border-stone-200 bg-stone-100 shadow-2xl dark:border-stone-700 dark:bg-stone-800">
+                <div class="relative overflow-hidden border border-stone-200 bg-stone-100 shadow-2xl rounded-lg dark:border-stone-700 dark:bg-stone-800">
                     <div class="flex items-center justify-between border-b border-stone-200 bg-stone-200 px-3 py-2 dark:border-stone-700 dark:bg-stone-800">
                         <div class="flex items-center gap-3">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-4 text-stone-400 dark:text-stone-500" aria-hidden="true">
                                 <path fill-rule="evenodd" d="M7.72 12.53a.75.75 0 0 1 0-1.06l7.5-7.5a.75.75 0 1 1 1.06 1.06L9.31 12l6.97 6.97a.75.75 0 1 1-1.06 1.06l-7.5-7.5Z" clip-rule="evenodd" />
                             </svg>
+
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-4 text-stone-400 dark:text-stone-500" aria-hidden="true">
                                 <path fill-rule="evenodd" d="M16.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z" clip-rule="evenodd" />
                             </svg>
@@ -134,10 +134,18 @@
                             </svg>
                         </button>
 
-                        <div class="absolute inset-x-0 bottom-4 z-10 flex justify-center gap-2" data-carousel-indicators>
-                            <button type="button" aria-label="Go to slide 1" aria-current="true" class="h-1 w-8 bg-white shadow transition cursor-pointer"></button>
-                            <button type="button" aria-label="Go to slide 2" class="h-1 w-8 bg-white opacity-50 shadow transition cursor-pointer"></button>
-                            <button type="button" aria-label="Go to slide 3" class="h-1 w-8 bg-white opacity-50 shadow transition cursor-pointer"></button>
+                        <div class="absolute inset-x-0 bottom-2 z-10 flex justify-center gap-2" data-carousel-indicators>
+                            <button type="button" aria-label="Go to slide 1" aria-current="true" class="px-1 py-2 cursor-pointer">
+                                <span class="block h-1 w-8 bg-white shadow-sm transition"></span>
+                            </button>
+
+                            <button type="button" aria-label="Go to slide 2" class="px-1 py-2 cursor-pointer">
+                                <span class="block h-1 w-8 bg-white opacity-50 shadow-sm transition"></span>
+                            </button>
+
+                            <button type="button" aria-label="Go to slide 3" class="px-1 py-2 cursor-pointer">
+                                <span class="block h-1 w-8 bg-white opacity-50 shadow-sm transition"></span>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -354,15 +362,11 @@
             </div>
         </section>
 
-        <section class="bg-stone-800 px-4 py-16 text-center sm:px-8 lg:py-20 dark:bg-stone-700">
+        <section class="bg-stone-800 px-4 py-20 text-center sm:px-8 lg:py-28 dark:bg-stone-700">
             <div class="container mx-auto max-w-3xl">
                 <h2 class="text-3xl font-light tracking-tight text-white sm:text-4xl">Need some help? Have an idea?</h2>
                 <p class="mt-4 text-lg text-stone-300">
-                    We'd love to hear from you!
-                </p>
-
-                <p class="mt-4 text-lg text-stone-300">
-                    Join the conversation, share feedback, get help or follow along for updates.
+                    We'd love to hear from you! Join the conversation, share feedback, get help or follow along for updates.
                 </p>
 
                 <div class="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
@@ -377,10 +381,10 @@
         </section>
     </main>
 
-    <footer class="border-t border-stone-200 bg-stone-50 px-4 py-10 text-sm text-stone-600 dark:border-stone-800 dark:bg-stone-900 dark:text-stone-400">
-        <div class="container mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 sm:flex-row sm:px-8">
+    <footer class="border-t border-stone-200 bg-stone-50 py-10 text-sm text-stone-600 dark:border-stone-800 dark:bg-stone-900 dark:text-stone-400">
+        <div class="container mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-4 sm:flex-row sm:px-8">
             <div>
-                &copy; 2026 <a href="https://www.chriskankiewicz.com" class="font-medium text-stone-800 hover:text-stone-800 dark:text-stone-200 dark:hover:text-stone-200 hover:underline">Chris Kankiewicz</a>
+                &copy; 2026 <a href="https://www.chriskankiewicz.com" class="font-medium text-stone-800 hover:underline dark:text-stone-200">Chris Kankiewicz</a>
             </div>
 
             <div class="flex items-center gap-6">
