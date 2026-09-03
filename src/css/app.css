@@ -40,15 +40,7 @@ html {
 }
 
 .feature-card {
-    @apply border border-stone-200 bg-white p-6 shadow-sm transition dark:border-stone-700 dark:bg-stone-800;
-}
-
-.section-heading {
-    @apply text-center text-3xl font-light tracking-tight text-stone-800 dark:text-stone-100;
-}
-
-.section-subheading {
-    @apply mt-3 text-center text-lg text-stone-600 dark:text-stone-400;
+    @apply rounded-xl border border-stone-200 bg-white p-8 shadow-sm transition dark:border-stone-700 dark:bg-stone-800;
 }
 
 .footer-link {
